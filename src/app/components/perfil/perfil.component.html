@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="d-flex justify-content-center">
+    <img class="rounded mx-auto d-block" src="{{ data.avatar_url }}" alt="avatar">
+  </div>
+  <div class="row mt-2 text-center">
+    <h3>{{ data.name | uppercase }}</h3>
+  </div>
+  <div class="row mt-2 d-flex justify-content-center">
+    <div class=" col-8">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Respositorios públicos
+          <span class="badge bg-primary rounded-pill">{{ data.public_repos }}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Seguidores
+          <span class="badge bg-primary rounded-pill">{{ data.followers }}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Seguidos
+          <span class="badge bg-primary rounded-pill">{{ data.following }}</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
